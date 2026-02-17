@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# Inicio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Objetivo
+El objetivo de la app es proporcionar a los usuarios información clara y actualizada sobre los horarios de los autobuses en sus localidades. Mientras que las empresas tienen una manera facil de informar a sus clientes sobre sus horarios.
 
-## Commands
+## Arquitectura
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Spring
+Guarda la informacion de los gtfs (informacion de los horarios) en una base de datos postgis (extension de postgresql)
 
-## Project layout
+Tecnologias:
+- Firestore
+- Postgis
+- Spring boot
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Flutter
+Aplicacion para mostrar a los usuarios la informacion de los buses.
+
+### Graph hopper
+Para cuando las empresas no establezcan la ruta.
